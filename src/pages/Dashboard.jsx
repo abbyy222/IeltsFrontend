@@ -74,7 +74,7 @@ export default function IeltsResultsPage() {
 
   const handleSignOut = () => {
     // Perform any necessary logout actions (e.g., clearing local storage)
-    navigate("/login");
+    navigate("/");
   };
 
   const changePassword = () => {
