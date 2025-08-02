@@ -45,7 +45,7 @@ export default function EmailPage() {
           />
           <button
             onClick={handleContinue}
-            className="absolute right-0 top-0 h-full w-12 bg-pink-600 text-white rounded-r-md flex items-center justify-center hover:bg-pink-700 transition-colors"
+            className="absolute right-0 top-0 h-full w-12 bg-red-600 text-white rounded-r-md flex items-center justify-center hover:bg-pink-700 transition-colors"
             aria-label="Continue"
           >
             {/* Right arrow SVG icon */}

@@ -23,7 +23,7 @@ export default function PasswordPage() {
 
       if (data.success) {
         localStorage.setItem('name', data.name);
-        navigate('/dashboard');
+        navigate('/DBash');
       } else {
         // Using a custom alert for better UX than browser's default alert()
         alert('Invalid credentials'); // Keeping alert for now as per previous instructions
@@ -60,28 +60,40 @@ export default function PasswordPage() {
         <header className="fixed top-[7px] left-0 w-full bg-white transition-shadow duration-200 z-50 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-3 flex justify-between items-center relative">
             {/* Logo - Updated SVG to resemble idp IELTS from pipl.JPG */}
-            <div className="flex items-center">
-              {/* IDP Logo - approximation based on pipl.JPG */}
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
-                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 17H9V12H7V17H5V7H11V17ZM19 17H17V12H15V17H13V7H19V17Z" fill="#2DB771"/>
-                <circle cx="12" cy="7" r="2" fill="#2DB771"/>
-              </svg>
-
-              {/* IELTS Logo (now red) - This will be replaced by your provided SVG */}
-              <svg
-                width="70"
-                height="24"
-                viewBox="0 0 70 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="mr-6"
-              >
-                <path
-                  d="M5.4 0H0V24H5.4V0ZM18.5 0H13.1V24H18.5V0ZM23.9 0H29.3V24H23.9V0ZM36.9 0L31.5 24H36.9L42.3 0H36.9ZM44.7 0H50.1V24H44.7V0ZM55.5 0H60.9V24H55.5V0Z"
-                  fill="#E20000"
-                />
-                <text x="61.5" y="10" fontSize="8" fill="#E20000" fontWeight="bold">®</text>
-              </svg>
+             <div className="flex items-center space-x-1 sm:space-x-2">
+      {/* This is a placeholder image for the first logo.
+        In a real application, you would replace this with the actual image path,
+        e.g., src="/src/assets/IDP.png" or a similar logo.
+      */}
+      <img
+        src="/src/assets/IDP.png"
+        alt="IDP Logo"
+        className="w-24 h-auto sm:w-28" // Maintain responsive sizing
+      />
+        <svg
+        className="w-24 h-auto sm:w-28" // This size now matches the IDP logo
+        version="1.0" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 74.000000 26.000000"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g transform="translate(0.000000,26.000000) scale(0.100000,-0.100000)"
+          fill="#E20000" stroke="none">
+          <path d="M593 229 c-28 -10 -46 -44 -38 -70 4 -13 29 -30 61 -45 60 -26 67
+          -40 27 -50 -21 -6 -30 -2 -41 14 -18 27 -52 29 -52 4 0 -30 33 -52 76 -52 52
+          0 84 23 84 59 0 34 -13 46 -66 63 -22 7 -39 20 -39 28 0 21 29 24 48 5 17 -16
+          57 -21 57 -6 0 5 -8 18 -17 30 -20 23 -67 33 -100 20z"/>
+          <path d="M28 130 c3 -98 4 -100 28 -100 24 0 24 1 24 100 l0 100 -27 0 -28 0
+          3 -100z"/>
+          <path d="M100 130 l0 -100 75 0 c68 0 75 2 75 20 0 17 -7 20 -50 20 -47 0 -50
+          1 -50 26 0 25 2 26 50 22 42 -2 50 0 50 15 0 14 -9 17 -49 17 -40 0 -50 3 -54
+          20 -5 18 0 20 49 20 47 0 54 2 54 20 0 18 -7 20 -75 20 l-75 0 0 -100z"/>
+          <path d="M270 130 l0 -100 75 0 c68 0 75 2 75 20 0 17 -7 20 -51 20 l-51 0 4
+          80 3 80 -27 0 -28 0 0 -100z"/>
+          <path d="M380 210 c0 -16 7 -20 30 -20 l30 0 0 -80 c0 -79 0 -80 25 -80 25 0
+          25 1 25 84 0 82 0 83 24 79 17 -4 25 0 29 16 5 20 1 21 -79 21 -77 0 -84 -2
+          -84 -20z"/>
+        </g>
+      </svg>
             </div>
           </div>
         </header>
