@@ -66,7 +66,7 @@ export default function PasswordPage() {
         e.g., src="/src/assets/IDP.png" or a similar logo.
       */}
       <img
-        src="/src/assets/IDP.png"
+        src="/IDP.png"
         alt="IDP Logo"
         className="w-24 h-auto sm:w-28" // Maintain responsive sizing
       />
