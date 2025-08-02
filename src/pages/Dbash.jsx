@@ -14,7 +14,7 @@ const HeaderLogos = () => {
         on screens that are 'sm' breakpoint or wider. h-auto maintains the aspect ratio.
       */}
       <img
-        src="/src/assets/IDP.png" // The path to your uploaded image
+        src="/IDP.png" // The path to your uploaded image
         alt="IDP Logo"
         className="w-24 h-auto sm:w-28" // Maintain consistent sizing with the IELTS logo
       />
